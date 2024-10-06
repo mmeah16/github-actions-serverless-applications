@@ -22,7 +22,7 @@ Resources:
         - x86_64
       Layers:
         - arn:aws:lambda:us-east-1:297552353691:layer:lambda-layer:1
-      Role: !GetAtt IAMRole.Arn
+      Role: !GetAtt "IAMRole.Arn"
       Events:
         HealthCheck:
           Type: Api
@@ -61,7 +61,7 @@ Outputs:
   # https://github.com/awslabs/serverless-application-model/blob/master/docs/internals/generated_resources.rst#api
   HelloWorldApi:
     Description: "API Gateway endpoint URL for Prod stage for Hello World function"
-    Value: !Sub "https://${ServerlessRestApi}.execute-api.${AWS::Region}.amazonaws.com/Prod/hello/"
+    Value: !Sub "https://${ServerlessRestApi}.execute-api.${AWS::Region}.amazonaws.com/Prod/"
   HelloWorldFunction:
     Description: "Hello World Lambda Function ARN"
     Value: !GetAtt HelloWorldFunction.Arn
