@@ -30,7 +30,7 @@ Resources:
             Path: /
             Method: get
 
-  IAMRole:
+  HelloWorldFunctionRole:
     Type: AWS::IAM::Role
     Properties:
       AssumeRolePolicyDocument:
