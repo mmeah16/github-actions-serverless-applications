@@ -17,7 +17,7 @@ jobs:
       # sam build
       - run: sam build
       # sam package
-      - run: sam package --template-file ../template.yaml --output-template-file packaged.yaml --s3-bucket github-actions-with-sam-1052
+      - run: sam package --template-file template.yaml --output-template-file packaged.yaml --s3-bucket github-actions-with-sam-1052
       # Run Unit tests- Specify unit tests here
 
       # sam deploy
