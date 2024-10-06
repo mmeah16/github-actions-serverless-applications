@@ -21,4 +21,4 @@ jobs:
       # Run Unit tests- Specify unit tests here
 
       # sam deploy
-      - run: sam deploy --template-file packaged.yaml --stack-name s3-lambda-invoke-stack --capabilities CAPABILITY_IAM
+      - run: sam deploy --template-file packaged.yaml --stack-name sam-hello-world --capabilities CAPABILITY_IAM
